@@ -4,8 +4,7 @@ document.onreadystatechange = function () {
   function renderApp() {
     var onInit = app.initialized();
 
-    onInit.then(getClient);
-    // .catch(handleErr);
+    onInit.then(getClient).catch(handleErr);
 
     function getClient(_client) {
       window.client = _client;
@@ -14,9 +13,9 @@ document.onreadystatechange = function () {
   }
 };
 
-// function handleErr(err) {
-//   console.error(`Error occured. Details:`, err);
-// }
+function handleErr(err) {
+  console.error(`Error occured. Details:`, err);
+}
 
 const App = {
   data() {
