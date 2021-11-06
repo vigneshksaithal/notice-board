@@ -1,0 +1,10 @@
+{
+  "message_title": {
+    "display_name": "Message title",
+    "type": "text"
+  },
+  "message_text": {
+    "display_name": "Message text",
+    "type": "paragraph"
+  }
+}
